@@ -1,18 +1,32 @@
-# microbiome-insights-api
-A serverless backend that stores, analyzes, and presents/shows “microbiome sample” data.
+# habit-tracker-api
+A backend service where users create habits, log daily completions, and generate progress summaries.
 
-This API was built to help me understand adult gut health and how the gut microbiome has a huge affect on sleep, digestion, overall health, and so much more. 
+This API was built to help me understand serverless backend engineering and to be able to create a clean system architecture. The project also uses TypeScript and raw SQL to add structure and help me maintain it.
 
-Information from this API can be used to provide root-cause analysis of a sample patient's gut health, including the following: abundance (how much) of each species is present in a given stool sample, what role the species are playing (good or bad), and how these microbes can impact one's overall health or predict risk for certain health conditions.
+Within this architecture, I use the following:
+# API Gateway
+-HTTP routing
 
-Architecture diagram: 
+# Lambda (Node.js 18.x runtime + TypeScript)
+- compute for each endpoint
 
-Tech Stack: 
+# Amazon RDS PostgreSQL 
+- relational database
 
-Setup instructions: 
+# AWS Secrets Manager 
+- DB credentials
 
-API Documentation:
+# AWS EventBridge 
+- scheduled daily summary job
 
+# AWS CloudWatch 
+- logs and metrics
+
+# Terraform 
+- infrastructure as code
+
+# GitHub Actions 
+- CI/CD pipeline
 
 
 
